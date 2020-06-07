@@ -1,0 +1,375 @@
+/*
+Theme Name: eCommerce Gem Child
+Theme URI: https://www.prodesigns.com/wordpress-themes/downloads/ecommerce-gem/
+Template: ecommerce-gem
+Author: ProDesigns
+Author URI: https://www.prodesigns.com/
+Description: eCommerce Gem is a free multipurpose e-Commerce WordPress theme suitable for eCommerce websites of any store type. The theme smoothly integrates WooCommerce, one of the best e-commerce plugin and is perfectly designed for its pages. Main features of the theme are product search with category select, multiple sections on the front page, full width easy to use slider, latest and featured product carousel, call to actions, advertisement section, banners and more. eCommerce Gem is perfect for stores such as book, mobile, bags, medical, jewelry, construction materials, cosmetics, clothing and all type of online shops. It has multipurpose layouts so can be used for business, corporate, portfolio, digital agency, blog, and all creative website development. View demo at https://www.prodesigns.com/wordpress-themes/demo/ecommerce-gem
+Tags: custom-background,custom-menu,custom-logo,featured-images,full-width-template,one-column,two-columns,theme-options,threaded-comments,translation-ready,footer-widgets,blog,left-sidebar,right-sidebar,education,e-commerce
+Version: 2.1.4.1591023221
+Updated: 2020-06-01 16:53:41
+
+*/
+
+
+/* libre baskervi */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/* open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+#primary, .sidebar, #colophon, #featured-clients {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.site-content {
+  background-color: #ffffff;
+  position: relative;
+	margin-right: auto;
+	margin-left: auto;
+  float:none;	
+}
+
+
+/*navbar styles */
+.gm-main-menu-wrapper .gm-navbar-nav > .gm-menu-item > .gm-anchor {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	padding: 5px 0;
+	line-height: 25px;
+	cursor: pointer;
+	font-family: 'open sans';
+}
+
+.gm-navbar ul, .gm-main-menu-wrapper ul, .gm-navigation-drawer ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+/*breadcrumb styles: for hvor man er på siden*/ 
+#breadcrumb {
+	background-color: #fff;
+	padding: 12px;
+	font-family: sans-serif;
+  text-transform: lowercase;
+}
+
+/*breadcrumb font styles */
+#breadcrumb a {
+    color: #000;
+}
+.breadcrumb-trail li {
+    color: #000;
+    display: block;
+    float: left;
+    list-style: outside none none;
+  padding-right: 10px;
+	font-family: open sans; 
+	font-size: 15px;
+}
+
+/*h1 på forside og gældende hos andre undersider, skal være invisible*/
+h1 {
+	display: none; 
+}
+h2 {
+	color: #000;
+  font-family: 'Libre Baskervville', serif;
+    font-weight: 600;
+		font-size: 30px;
+}
+h3 {
+    color: #000;
+    font-family: 'Libre Baskervville', serif;
+    font-weight: 700;
+	font-size: 20px;
+} 
+h5 {
+	font-family: 'Open sans';
+}
+
+/* center logo*/
+.site-branding{
+	width:100% !important;
+	text-align:center;
+}
+.site-header .site-branding img {
+	margin: 0 auto;
+}
+
+/* small colored Line under header font */
+h1.page-title:after {
+    content: "";
+    height: 2px;
+    width: 60px;
+    background: #D4AF9D;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+/* Products styles/fonts and color */
+.edit-post-visual-editor .editor-block-list__block .wc-block-grid__product-title, .editor-styles-wrapper .wc-block-grid__product-title, .wc-block-grid__product-title  {
+    line-height: 1.2em;
+    font-weight: 100;
+    padding: 5px;
+    font-size: 16px;
+	  font-family: 'Open Sans', serif;
+    display: block;
+}
+a {
+    color: #000;
+    text-decoration: inherit;
+}
+
+a:visited {
+    color:  #3a4f7f; /*blue*/ 
+}
+a:hover,
+a:focus,
+a:active {
+    color: #3a4f7f; /*blue*/ 
+}
+a:focus {
+    outline:inherit;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/* Products styles Buttons */ 
+.wp-block-button__link {
+    background-color: #0188a6;
+    border: none;
+    border-radius: 1px;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+		font-family: 'Open sans';
+}
+.wc-block-grid__product-price .wc-block-grid__product-price__value {
+    letter-spacing: -1px;
+    font-weight: 100;
+    display: block;
+    font-size: 15px;
+    line-height: 1.25;
+    color: #000;
+}
+/* "Sale" */
+.woocommerce span.onsale{
+	display: none; 
+}
+
+
+p {
+  text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+li {
+  text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+p.has-text-align-left {
+	margin-left: 150px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+h3.has-text-align-left {
+	margin-left: 150px;
+	font-size: 35px;
+	font-family: baskerville;
+}
+
+h3.ostt {
+	margin-left: 150px;
+	margin-right: 180px;
+	margin-bottom: -15px;
+	padding-top: 20px;
+	margin-top: 30px;
+	font-size: 35px;
+	font-weight: 300;
+	font-family: 'Libre Baskervville', serif;
+	background-color: rgba(224, 96, 6, 0.2);
+	
+}
+
+/* images */ 
+
+img.wp-image-252 {
+	margin-right: 180px;
+}
+
+img.wp-image-246 {
+	margin-right: 180px;
+}
+
+img.wp-image-247 {
+	margin-right: 180px;
+}
+
+.is-style-circle-mask img, .is-style-rounded img {
+    border-radius: 1px;
+		margin-right: 180px;
+}
+
+
+
+/* Footer backgorund color */
+#footer-widgets{
+	background-color: #E2FEFB;  /* lightblue */
+	padding: 20px;
+}
+/* Footer h4 text color black*/
+#footer-widgets .widget .widget-title {
+  color: black;
+	font-family: 'Open Sans', serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 1px;
+}
+
+#footer-widgets p, #footer-widgets .widget ul li, #footer-widgets .widget ul li a {
+	color: #707070;
+	font-size: 15px;
+	font-weight: 300;
+	list-style-type: none;
+	font-family: 'Open Sans';
+	list-style: none; 
+}
+
+
+
+/*site footer, ecommerce gem by prodesigns*/
+#colophon {
+    background-color: #ffffff;
+    clear: both;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.site-footer {
+    background: #171717;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+/* shop alt styles*/
+
+/*senest knap*/
+select {
+    width: 80px;
+    padding: 5px;
+		color: #666;
+    border: 1px solid #fff;
+		text-transform: none;
+}
+
+select, textarea {
+    color: #D4AF9D;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* tips & tricks styles*/
+
+/*box style*/
+p.has-text-align-left {
+    margin-left: 150px;
+	  margin-right: 180px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+	  background-color: rgba(224, 96, 6, 0.2);
+}
+
+/*kontakt form*/
+.wpcf7-form {
+    /* max-width: 875px; */
+    width: 35%;
+}
+
+button, .comment-reply-link, a.button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background: #0188A6 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: 'Open sans';
+    border-radius: 0px;
+    font-weight: 200;
+    text-transform: lowercase;
+  	justify-content: center;
+  	align-items: center;
+}
+
+/*nyhedsbrev form*/
+
+.sfsi_subscribe_Popinner h5 {
+    font-family: 'Open Sans'!important;
+    font-style: 'Open Sans' !important;
+    color: #000000 !important;
+    font-size: 18px !important;
+    text-align: center !important;
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+    color: black;
+}
+
+.sfsi_subscribe_Popinner {
+    width: 50px !important;
+    height: auto !important;
+    border: 0px solid #ffffff !important;
+    padding: 18px 0px !important;
+    background-color: #ffffff !important;
+}
+
+
+
+
+
+
+
+/* mobil version tips og tricks*/
+@media only screen and (max-width: 900px) {
+   p.has-text-align-left {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+	  background-color: rgba(224, 96, 6, 0.2);
+}
+	
+	h3.ostt {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: -15px;
+	padding-top: 20px;
+	margin-top: 30px;
+	font-size: 25px;
+	font-weight: 300;
+	font-family: 'Libre Baskervville', serif;
+	background-color: rgba(224, 96, 6, 0.2);
+	
+}
+}
